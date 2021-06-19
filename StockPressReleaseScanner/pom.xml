@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>StockPressReleaseScanner</groupId>
+  <artifactId>StockPressReleaseScanner</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>StockPressReleaseScanner</name>
+  <description>Scans Company Websites For Press Releases</description>
+  <dependencies>
+  
+    	<dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+        
+   		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>fun.mike</groupId>
+		     <artifactId>diff-match-patch</artifactId>
+		    <version>0.0.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>LATEST</version>
+		</dependency> 
+		
+  </dependencies>
+</project>
