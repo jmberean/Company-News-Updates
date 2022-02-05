@@ -44,7 +44,7 @@ public class ScanStocks {
 	}
 	public static void start() throws FileNotFoundException, InterruptedException {
 		Toolkit.getDefaultToolkit().beep();
-		System.out.printf("%-35s%s\n\n","ScanStocks starting now:", LocalTime.now());
+		System.out.printf("%-35s%s\n\n","\nScanStocks starting now:", LocalTime.now() + " -----------------------------------------------");
 		System.out.printf("%-35s%s\n","companyWebsiteThreadSleep1:", timeToRun.companyWebsiteThreadSleep1/1000 + " seconds");
 		System.out.printf("%-35s%s\n","companyWebsiteThreadSleep2:", timeToRun.companyWebsiteThreadSleep2/1000 + " seconds");
 		System.out.printf("%-35s%s\n\n","companyWebsiteThreadSleep3:", timeToRun.companyWebsiteThreadSleep3/1000 + " seconds");		
@@ -67,7 +67,7 @@ public class ScanStocks {
 			companies.add(company);
 			System.out.printf("%-35s%s\n","Collected Company:", company);
 		}
-		System.out.printf("\n%-35s%s\n\n","Starting threads:", LocalTime.now());
+		System.out.printf("\n%-35s%s\n\n","Starting threads:", LocalTime.now() + " -----------------------------------------------");
 		java.lang.Thread.sleep(1000L);
 		Toolkit.getDefaultToolkit().beep();
 		ExecutorService executor = Executors.newFixedThreadPool(urls.size() + companies.size());
@@ -187,8 +187,8 @@ class ScanGoogleNews implements Runnable {
 class timeToRun{
     final static long companyWebsiteThreadSleep1 = 2500L; 
     final static long companyWebsiteThreadSleep2 = 15000L; 
-    final static long companyWebsiteThreadSleep3 = 60000L; 
-    final static long googleThreadSleep1 = 15000L; 
+    final static long companyWebsiteThreadSleep3 = 1800000L; 
+    final static long googleThreadSleep1 = 30000L; 
     final static long googleThreadSleep2 = 30000L; 
     final static long googleThreadSleep3 = 1800000L; 
 	public static boolean isItTimeToRun() {
